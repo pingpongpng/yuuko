@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "js-beautify": "^1.14.11",
+    "js-yaml": "^4.1.0",
+    "showdown": "^2.1.0"
+  },
+  "scripts": {
+    "start:render": "node ./src/render.js",
+    "start:build": "node ./src/build.js",
+    "start:live": "node ./src/live.js",
+    "start:backup": "node ./src/backup.js",
+    "start:renderlive": "npm-run-all -p start:render && npm-run-all -p start:live",
+    "start:both": "npm-run-all -p start:render && npm-run-all -p start:build"
+  }  
+}
